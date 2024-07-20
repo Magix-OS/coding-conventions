@@ -1,4 +1,4 @@
-**JSON File structure example :**
+* JSON File structure example :
 
 #+BEGIN_SRC json
 [
@@ -52,3 +52,12 @@
     }
 ]
 #+END_SRC
+
+** Explanation :
+- privEscal : 0 is sudo, 1 is doas
+- portage : 0 binhost, 1 source
+- init : 0 openrc, 1 systemd
+- desktop : 0 nox11, 1 gnome, 2 plasma
+- bedrock: 0 no, 1 yes
+- stratas : arch, debian, fedora, ubuntu, void
+- gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware

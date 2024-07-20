@@ -1,3 +1,5 @@
+* The user should not be able to enable BTRFS and Bedrock-Linux support in the installer due to a long standing bug with GRUB/BTRFS 
+
 * JSON File structure example :
 
 #+BEGIN_SRC json

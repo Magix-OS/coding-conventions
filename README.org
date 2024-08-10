@@ -48,6 +48,8 @@
             "passwd": "Supersecurepassword123",
             "rootpasswd": "Moresecurepassword123",
             "locales": ["en_US.UTF-8 UTF-8", "fr_FR.UTF-8 UTF-8"],
+            "useflags": "bluetooth -X alsa",
+            "kernel": 0,
             "stratas": [true, true, false, false, false],
             "gpus": [true, true, true, false, false, false, false, false]
         }
@@ -63,3 +65,4 @@
 - bedrock: 0 no, 1 yes
 - stratas : arch, debian, fedora, ubuntu, void
 - gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware
+- kernel: 0 gentoo-kernel-bin, 1 gentoo-kernel

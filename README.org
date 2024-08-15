@@ -64,7 +64,7 @@
 ** Explanation :
 - privEscal : true is doas, false is sudo
 - portage : true is source,false is binhost
-- init : true is systemd, false is systemd
+- init : true is systemd, false is OpenRC
 - desktop : 0 nox11, 1 gnome, 2 plasma
 - stratas : arch, debian, fedora, ubuntu, void
 - gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware

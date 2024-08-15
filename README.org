@@ -70,3 +70,7 @@
 - gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware
 - kernel: true is binary, false is source
 - worldUpdate: true update, false don't
+
+* Binhost file structure
+
+For the stage4s, we need to ship a modified /etc/portage/binrepos.conf/gentoobinhost.conf file, such as we remove the "priority" entry. in order for this script to work

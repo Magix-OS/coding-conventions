@@ -38,8 +38,10 @@
             "desktop": 0,
             "makeOptJ": 8,
             "makeOptL": 4,
+            "worldUpdate": true,
             "bedrock": true,
             "flatpak": false,
+            "kernel": false,
             "timezone": "Africa/Algiers",
             "locale": "en_US.UTF-8 UTF-8",
             "keyboard": "de",
@@ -50,12 +52,12 @@
             "locales": ["en_US.UTF-8 UTF-8", "fr_FR.UTF-8 UTF-8"],
             "useflags": "bluetooth -X alsa",
             "filename": "/home/crystal/Downloads/stage4.tar.xz",
-            "kernel": 0,
             "stratas": [true, true, false, false, false],
             "gpus": [true, true, true, false, false, false, false, false]
         }
     }
 ]
+
 
 #+END_SRC
 
@@ -67,3 +69,4 @@
 - stratas : arch, debian, fedora, ubuntu, void
 - gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware
 - kernel: true is binary, false is source
+- worldUpdate: true update, false don't

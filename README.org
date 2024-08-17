@@ -3,7 +3,7 @@
 * JSON File structure example :
 
 #+BEGIN_SRC json
-[
+[[
   {
     "layout": [
       {
@@ -32,39 +32,18 @@
       }
     ],
     "config": {
-      "priv_escal": false,
-      "portage": false,
-      "init": false,
-      "world_update": true,
       "bedrock": true,
-      "flatpak": false,
-      "kernel": false,
-      "linux_firmware": true,
-      "sof_firmware": false,
-      "intel_microcode": true,
       "desktop": 0,
-      "make_opt_j": 8,
-      "make_opt_l": 4,
-      "timezone": "Africa/Algiers",
-      "locale": "en_US.UTF-8",
-      "keyboard": "de",
-      "username": "crystal",
-      "hostname": "wizardbox",
-      "passwd": "Supersecurepassword123",
-      "rootpasswd": "Moresecurepassword123",
-      "locales": [
-        "en_US.UTF-8 UTF-8",
-        "fr_FR.UTF-8 UTF-8"
-      ],
-      "useflags": "bluetooth -X alsa",
       "filename": "/home/crystal/Downloads/stage4.tar.xz",
-      "stratas": [
+      "filesystems": [
         true,
         true,
-        false,
+        true,
+        true,
         false,
         false
       ],
+      "flatpak": false,
       "gpus": [
         true,
         true,
@@ -74,16 +53,45 @@
         false,
         false,
         false
-      ]
+      ],
+      "hostname": "wizardbox",
+      "init": false,
+      "intel_microcode": true,
+      "kernel": false,
+      "keyboard": "de",
+      "linux_firmware": true,
+      "locale": "en_US.UTF-8",
+      "locales": [
+        "en_US.UTF-8 UTF-8",
+        "fr_FR.UTF-8 UTF-8"
+      ],
+      "make_opt_j": 8,
+      "make_opt_l": 4,
+      "passwd": "Supersecurepassword123",
+      "portage": false,
+      "priv_escal": false,
+      "rootpasswd": "Moresecurepassword123",
+      "sof_firmware": false,
+      "stratas": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "timezone": "Africa/Algiers",
+      "useflags": "bluetooth -X alsa",
+      "username": "crystal",
+      "world_update": true
     }
   }
 ]
 
 
-
 #+END_SRC
 
 ** Explanation :
+- filesystems: XFS,ext4, VFAT, BTRFS,ZFS,JFS
 - priv_escal : true is doas, false is sudo
 - portage : true is source,false is binhost
 - init : true is systemd, false is OpenRC

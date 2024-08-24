@@ -33,7 +33,6 @@
     ],
     "config": {
       "bedrock": true,
-      "desktop": 0,
       "filename": "/home/crystal/Downloads/stage4.tar.xz",
       "filesystems": [
         true,

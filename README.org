@@ -43,16 +43,7 @@
         false
       ],
       "flatpak": false,
-      "gpus": [
-        true,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
+      "gpus": "intel nvidia i965",
       "hostname": "wizardbox",
       "init": false,
       "intel_microcode": true,
@@ -67,10 +58,10 @@
       ],
       "make_opt_j": 8,
       "make_opt_l": 4,
-      "passwd": "Supersecurepassword123",
+      "passwd": "password",
       "portage": false,
-      "priv_escal": false,
-      "rootpasswd": "Moresecurepassword123",
+      "priv_escal": true,
+      "rootpasswd": "password",
       "sof_firmware": false,
       "stratas": [
         true,
@@ -98,7 +89,7 @@
 - init : true is systemd, false is OpenRC
 - desktop : 0 nox11, 1 gnome, 2 plasma
 - stratas : arch, debian, fedora, ubuntu, void
-- gpus: intel, i915, nvidia, radeon, amdgpu, radeonsi, virtualbox, vmware
+- gpus: refer to https://github.com/gentoo/gentoo/blob/master/profiles/desc/video_cards.desc
 - kernel: true is binary, false is source
 - world_update: true update, false don't
 

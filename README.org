@@ -43,8 +43,8 @@
         false
       ],
       "flatpak": false,
-      "gpus": "intel nvidia i965",
-      "hostname": "wizardbox",
+      "gpus": "i915 intel nvidia virgl",
+      "hostname": "pineapple",
       "init": false,
       "intel_microcode": true,
       "kernel": false,
@@ -59,6 +59,7 @@
       "make_opt_j": 8,
       "make_opt_l": 4,
       "passwd": "password",
+      "packages": "app-editors/vim",
       "portage": false,
       "priv_escal": true,
       "rootpasswd": "password",
@@ -72,7 +73,7 @@
       ],
       "timezone": "Africa/Algiers",
       "useflags": "bluetooth -X alsa",
-      "username": "crystal",
+      "username": "bobelkassa",
       "world_update": true
     }
   }

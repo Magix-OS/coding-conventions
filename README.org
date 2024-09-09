@@ -3,7 +3,7 @@
 * JSON File structure example :
 
 #+BEGIN_SRC json
-[
+
   {
     "layout": [
       {
@@ -77,7 +77,7 @@
       "world_update": true
     }
   }
-]
+
 
 
 

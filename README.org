@@ -44,11 +44,11 @@
       ],
       "flatpak": false,
       "gpus": "i915 intel nvidia virgl",
-      "hostname": "pineapple",
-      "init": false,
-      "intel_microcode": true,
-      "kernel": false,
       "grub_disk": "/dev/sda",
+      "hostname": "pineapple",
+      "systemd": false,
+      "intel_microcode": true,
+      "binary_kernel": false,
       "keyboard": "de",
       "linux_firmware": true,
       "locale": "en_US.UTF-8",
@@ -58,10 +58,10 @@
       ],
       "make_opt_j": 8,
       "make_opt_l": 4,
-      "passwd": "password",
       "packages": "app-editors/vim",
-      "portage": false,
-      "priv_escal": true,
+      "passwd": "password",
+      "binhost": false,
+      "use_doas": true,
       "rootpasswd": "password",
       "sof_firmware": false,
       "stratas": [
@@ -85,13 +85,8 @@
 
 ** Explanation :
 - filesystems: XFS,ext4, VFAT, BTRFS,ZFS,JFS
-- priv_escal : true is doas, false is sudo
-- portage : true is source,false is binhost
-- init : true is systemd, false is OpenRC
-- desktop : 0 nox11, 1 gnome, 2 plasma
 - stratas : arch, debian, fedora, ubuntu, void
 - gpus: refer to https://github.com/gentoo/gentoo/blob/master/profiles/desc/video_cards.desc
-- kernel: true is binary, false is source
 - world_update: true update, false don't
 
 The rest is self explanatory
